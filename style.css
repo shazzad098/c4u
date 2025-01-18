@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .grn_btn {
+    @apply text-[#00FF84] lg:text-[24px] font-[400];
+  }
+  .grn_btn_txt {
+    @apply text-[#072125] text-[18px];
+  }
+  .btn {
+    @apply px-4 py-2 rounded-md hover:bg-[#c03e3e] hover:text-white transition-all;
+  }
+  .card_size {
+    @apply mt-12 px-4 w-[50%] h-[45%] border rounded-md shadow-lg;
+  }
+  .skill_btn {
+    @apply border border-[#F44335] text-black cursor-pointer hover:bg-[#F44335] hover:text-white transition-all px-4 py-2 rounded-full w-full md:w-auto;
+  }
+}
