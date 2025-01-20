@@ -11,7 +11,7 @@
 <body class="dark:bg-gray-900">
     <!-- Navbar Section  -->
     <section class="w-full h-[10vh] bg-white dark:bg-gray-900 dark:text-white">
-        <div class="flex lg:justify-between lg:items-center lg:mx-6 lg:my-2">
+        <div class="flex lg:justify-between lg:items-center lg:mx-6 lg:my-2 justify-between">
             <div><img src="images/logo.png" alt="Logo" class="h-8 sm:h-10 dark:bg-white" /></div>
             <div class="lg:hidden">
                 <i id="hamburger" class="fa-solid fa-bars text-2xl cursor-pointer"></i>
@@ -32,7 +32,7 @@
     </section>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden justify-between">
         <div class="glassy-background w-3/4 h-full p-6 transform transition-transform duration-300 ease-in-out">
             <div class="flex justify-end">
                 <i id="close-menu" class="fa-solid fa-times text-2xl cursor-pointer"></i>
@@ -262,7 +262,7 @@
     </section>
 
     <!-- Course Section -->
-    <section class="size h-fit bg-[#FAFAFA] py-8">
+    <section class="size h-fit bg-[#FAFAFA] py-8 dark:bg-gray-600 dark:text-white">
         <div class="size space-y-4 sm:space-y-8">
             <!-- Course 1 -->
             <div class="relative w-[80vw] sm:w-3/5 lg:w-[100%]">
@@ -393,20 +393,20 @@
 
 
     <script>
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const hamburger = document.getElementById('hamburger');
-        //     const menu = document.getElementById('menu');
-        //     const moonIcon = document.getElementById('moon-icon');
-        //     const body = document.body;
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+            const moonIcon = document.getElementById('moon-icon');
+            const body = document.body;
 
-        //     hamburger.addEventListener('click', function () {
-        //         menu.classList.toggle('hidden');
-        //     });
+            hamburger.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
 
-        //     moonIcon.addEventListener('click', function () {
-        //         body.classList.toggle('dark');
-        //     });
-
+            moonIcon.addEventListener('click', function () {
+                body.classList.toggle('dark');
+            });
+        });
         const htmlTag = document.getElementById('htmlTag');
         document.getElementById('switch').addEventListener('click', function () {
             htmlTag.classList.toggle('dark');
