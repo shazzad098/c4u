@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Creatives 4 You</title>
 </head>
-<body>
+<body class="dark:bg-gray-900">
     <!-- Navbar Section  -->
-    <section class="w-full h-[10vh] bg-white">
-        <div class="flex justify-between items-center lg:mx-6 lg:my-2">
-            <div><img src="images/logo.png" alt="Logo" class="h-8 sm:h-10" /></div>
+    <section class="w-full h-[10vh] bg-white dark:bg-gray-900 dark:text-white">
+        <div class="flex lg:justify-between lg:items-center lg:mx-6 lg:my-2">
+            <div><img src="images/logo.png" alt="Logo" class="h-8 sm:h-10 dark:bg-white" /></div>
             <div class="lg:hidden">
                 <i id="hamburger" class="fa-solid fa-bars text-2xl cursor-pointer"></i>
             </div>
-            <div id="menu" class="hidden lg:flex lg:gap-4">
+            <div id="menu" class="hidden lg:flex lg:gap-4 lg:items-center">
                 <ul class="lg:flex lg:gap-4">
                     <li><a class="hover:text-[#FF0000]" href="#">Home</a></li>
                     <li><a class="hover:text-[#FF0000]" href="#">About Us</a></li>
@@ -26,8 +25,8 @@
                 </ul>
                 <button class="btn bg-[#FF0000] text-white">Register Interest</button>
             </div>
-            <div class="flex items-center gap-6">
-                <img class="hover:cursor-pointer h-6 w-6" src="images/moon.png" alt="Dark Mode" />
+            <div class="flex items-center gap-6 dark:bg-gray-900 dark:text-white" id="switch">
+                <img class="hover:cursor-pointer h-6 w-6 dark:filter dark:invert" src="images/moon.png" alt="Dark Mode" />
             </div>
         </div>
     </section>
@@ -49,7 +48,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="w-full h-auto sm:h-[calc(100vh-10vh)] bg-[#FAFAFA] py-8 sm:py-0">
+    <section class="w-full h-auto sm:h-[calc(100vh-10vh)] bg-[#FAFAFA] py-8 sm:py-0 dark:bg-gray-800 dark:text-white">
         <div class="flex flex-col sm:flex-row items-center w-full h-full px-4 sm:px-8 lg:px-20 gap-4 sm:gap-8">
             <!-- Left Section -->
             <div class="flex flex-col w-full sm:w-6/12">
@@ -65,7 +64,7 @@
                     </h1>
                 </div>
                 <div class="mt-4">
-                    <p class="text-[#072125] text-sm sm:text-base">
+                    <p class="text-[#072125] dark:text-white text-sm sm:text-base">
                         This is your path to a career in IT. In this program, you’ll learn
                         in-demand skills with no degree or experience required.
                     </p>
@@ -95,7 +94,7 @@
 
                 <div class="flex flex-wrap gap-4 mt-6">
                     <button class="bg-[#FF0000] text-white btn">Sign Up</button>
-                    <button class="border bg-white btn">Learn More</button>
+                    <button class="border bg-white btn dark:text-black">Learn More</button>
                 </div>
             </div>
 
@@ -108,11 +107,11 @@
 
     <!-- logo Section  -->
     <section
-        class="w-full h-auto sm:h-[20vh] bg-white flex flex-col sm:flex-row items-center justify-center px-4 sm:px-6 py-4 sm:py-0">
+        class="w-full h-auto sm:h-[20vh] bg-white flex flex-col sm:flex-row items-center justify-center px-4 sm:px-6 py-4 sm:py-0 dark:bg-gray-600 dark:text-white">
         <!-- First Section -->
         <div
             class="w-full sm:w-[25%] h-auto sm:h-[10vh] flex items-center justify-center p-4 border-[#072125] border-b-2 sm:border-b-0 sm:border-r-2">
-            <p class="text-center sm:text-left">
+            <p class="text-center sm:text-left ">
                 Pave your path to career success by gaining a professional Google certificate with the support of C4U
             </p>
         </div>
@@ -136,10 +135,10 @@
     </section>
 
     <!-- Card Section -->
-    <section class="container mx-auto p-6 bg-[#FAFAFA]">
+    <section class="container mx-auto p-6 bg-[#FAFAFA] dark:bg-gray-900 dark:text-black">
         <div class="grid lg:grid-cols-2 gap-6">
             <!-- Left Section: What you will learn -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-6 rounded-lg shadow-md dark:bg-gray-600 dark:text-white">
                 <h2 class="text-xl font-bold mb-4">What you will learn</h2>
                 <ul class="space-y-4">
                     <li class="flex items-start">
@@ -165,7 +164,7 @@
             </div>
 
             <!-- Right Section: Skills you will gain -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-6 rounded-lg shadow-md dark:bg-gray-600 dark:text-white">
                 <img src="images/IT_social 1.png" alt="">
                 <h2 class="text-xl font-bold mb-4">Skills you will gain</h2>
                 <div class="flex flex-wrap gap-2">
@@ -187,7 +186,7 @@
 
         <div class="grid lg:grid-cols-2 gap-6 mt-[10vh]">
             <!-- Left Section: Jobs Associated with Certificate -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-6 rounded-lg shadow-md dark:bg-gray-600 dark:text-white">
                 <h2 class="text-xl font-bold mb-4">Jobs Associated with Certificate</h2>
                 <ul class="grid grid-cols-2 gap-4">
                     <li class="flex items-center">
@@ -231,7 +230,7 @@
     </section>
 
     <!-- Certificate Section -->
-    <section class="w-full h-auto sm:h-[40vh] bg-white py-8 sm:py-0">
+    <section class="w-full h-auto sm:h-[40vh] bg-white py-8 sm:py-0 dark:bg-gray-800 dark:text-white">
         <div
             class="container mx-auto px-4 sm:px-8 lg:px-15vh h-full flex flex-col sm:flex-row justify-between items-center">
             <div class="text-center sm:text-left mb-8 sm:mb-0">
@@ -267,7 +266,7 @@
         <div class="w-full flex flex-col items-center space-y-4 sm:space-y-8">
             <!-- Course 1 -->
             <div class="relative w-[80vw] sm:w-3/5 lg:w-[100%]">
-                <img class="w-full" src="images/courses/course_1.png" alt="Course 1">
+                <img class="w-full dark:bg-gray-900" src="images/courses/course_1.png" alt="Course 1">
             </div>
             <!-- Shape 1 -->
             <div class="relative w-[80vw] sm:w-3/5 lg:w-[100%]">
@@ -305,7 +304,7 @@
     </section>
 
     <!-- Footer Section  -->
-    <section class="h-auto sm:h-[80vh] mt-10">
+    <section class="h-auto sm:h-[80vh] mt-10 dark:bg-gray-900 dark:text-white">
         <!-- Background Section with Quote -->
         <div class="bg-[url('images/footer_bg.png')] bg-no-repeat bg-contain h-full w-full relative">
             <div class="bg-white p-6 sm:p-8 rounded-lg max-w-md sm:max-w-2xl absolute top-10 sm:top-20 left-4 sm:left-10">
@@ -328,7 +327,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
                     <!-- Logo Section -->
                     <div class="lg:col-span-1">
-                        <img src="images/logo.png" alt="Logo" class="w-24 sm:w-32 h-auto">
+                        <img src="images/logo.png" alt="Logo" class="w-24 sm:w-32 h-auto dark:bg-white">
                         <ul class="mt-4 space-y-2 text-sm sm:text-base">
                             <li>Level39</li>
                             <li>One Canada Square,</li>
@@ -394,20 +393,24 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.getElementById('hamburger');
-            const menu = document.getElementById('menu');
-            const moonIcon = document.getElementById('moon-icon');
-            const body = document.body;
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const hamburger = document.getElementById('hamburger');
+        //     const menu = document.getElementById('menu');
+        //     const moonIcon = document.getElementById('moon-icon');
+        //     const body = document.body;
 
-            hamburger.addEventListener('click', function () {
-                menu.classList.toggle('hidden');
-            });
+        //     hamburger.addEventListener('click', function () {
+        //         menu.classList.toggle('hidden');
+        //     });
 
-            moonIcon.addEventListener('click', function () {
-                body.classList.toggle('dark');
-            });
-        });
+        //     moonIcon.addEventListener('click', function () {
+        //         body.classList.toggle('dark');
+        //     });
+
+        const htmlTag = document.getElementById('htmlTag');
+        document.getElementById('switch').addEventListener('click', function () {
+            htmlTag.classList.toggle('dark');
+        })
     </script>
 
 </body>

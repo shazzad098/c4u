@@ -7,7 +7,7 @@
     @apply text-[#00FF84] lg:text-[24px] font-[400];
   }
   .grn_btn_txt {
-    @apply text-[#072125] text-[18px];
+    @apply text-[#072125] text-[18px] dark:text-white;
   }
   .btn {
     @apply px-4 py-2 rounded-md hover:bg-[#c03e3e] hover:text-white transition-all;
